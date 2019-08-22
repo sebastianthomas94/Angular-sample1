@@ -1,0 +1,31 @@
+<p>
+  view works!
+</p>
+
+<br>
+Another Name:{{Name}}
+<br>
+Age: {{Age}}
+
+<br>
+Email:{{Email}}
+
+<br>
+Address:
+<address>
+  {{Address.House}},{{Address.Street}}<br>
+  {{Address.Dist}}
+</address>
+
+<br>
+<br>
+<b>Hobbies</b>
+<li *ngFor="let hb of Hobbies">{{hb}}</li>
+<br>
+<br>
+
+
+<b>Hobbies Table</b>
+<table border="2">
+  <tr *ngFor="let h of Hobbies"><li>{{h}}</li></tr>
+</table>
