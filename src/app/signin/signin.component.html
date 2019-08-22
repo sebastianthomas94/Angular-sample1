@@ -1,0 +1,23 @@
+<!-- <p>
+  signin works!
+</p>
+ -->
+
+
+<div style="">
+<b>Username:</b> <br>
+<input type="text"><br>
+<b>Password</b><br>
+<input type="text"><br>
+<br>
+<button class="waves-effect waves-light btn">SignIn</button>
+<button class="waves-effect waves-light btn"(click)="signup=!signup">SignUp?</button>
+</div>
+<br>
+<hr>
+<br>
+
+<div *ngIf="signup">
+
+    <app-signup></app-signup>
+</div>
