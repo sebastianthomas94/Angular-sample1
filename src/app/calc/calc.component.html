@@ -10,8 +10,8 @@
  <input type="number" name="" id="" [(ngModel)]="a"><br>
  Number 2:
  <input type="number" name="" id=""[(ngModel)]="b"><br>
- <button (click)="add=true; sub=false;"> Add</button>
- <button (click)="sub=true;add=false; ">Substract</button>
+ <button (click)="r=add(a,b);add1=true;sub1=false "> Add</button>
+ <button (click)="r=sub(a,b);sub1=true;add1=false ">Substract</button>
 
- <h3 *ngIf="add">{{a}}+{{b}}={{a+b}}</h3>
- <h3 *ngIf="sub">{{a}}-{{b}}={{a-b}}</h3>
+ <h3 *ngIf="add1">{{a}}+{{b}}={{r}}</h3>
+ <h3 *ngIf="sub1">{{a}}-{{b}}={{r}}</h3>
