@@ -7,6 +7,8 @@ import { ViewComponent } from './view/view.component';
 import { CartComponent } from './cart/cart.component';
 import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
+import { NameComponent } from './name/name.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,10 +17,11 @@ import { SignupComponent } from './signup/signup.component';
     ViewComponent,
     CartComponent,
     SigninComponent,
-    SignupComponent
+    SignupComponent,
+    NameComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,12 @@
+<!-- <p>
+  name works!
+</p> -->
+
+
+
+Name:
+<input type="text" name="name" id="" [(ngModel)]="cust_name">
+<br>
+<button (click)="msg=!msg" type="submit" >Show message</button>
+
+<h1 *ngIf="msg">Welcome {{cust_name}}</h1>
