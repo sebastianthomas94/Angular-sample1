@@ -1,0 +1,52 @@
+<!-- <p>
+  cart works!
+</p>
+ -->
+
+
+
+ <h2>Products</h2>
+
+ 
+    <table border="2">
+      <tr>
+        <td>#</td>
+        <td>Name</td>
+        <td>Price</td>
+        <td>Company</td>
+        <td></td>
+      </tr>
+      <tr *ngFor="let h of products; let i = index">
+        <td>{{i+1}}</td>
+        <td>{{h.name}}</td>
+        <td>{{h.price}}</td>
+        <td>{{h.company}}</td>
+        <td><button (click)="add(i)"> Add to cart</button></td>
+      </tr>
+    </table>
+
+    <br>
+  
+    
+<button (click)="view=true;">View Cart</button>
+<button (click)="view=false">Hide Cart</button>
+
+    <h2>Cart</h2>
+
+    <table border="2" *ngIf="view">
+        <tr>
+          <td>#</td>
+          <td>Name</td>
+          <td>Price</td>
+          <td>Company</td>
+          <td></td>
+        </tr>
+        <tr *ngFor="let h of cart; let i = index">
+          <td>{{i+1}}</td>
+          <td>{{h.name}}</td>
+          <td>{{h.price}}</td>
+          <td>{{h.company}}</td>
+          <td><button (click)="del(i)"> Delete From cart</button></td>
+        </tr>
+      </table>
+ 

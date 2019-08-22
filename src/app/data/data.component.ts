@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataComponent implements OnInit {
 
-  constructor() { }
+  project=[];
+
+  constructor() { 
+    this.project=[{name:"abc", duration:"30 days", enddate:"10/10/2019"},{name:"abc", duration:"30 days", enddate:"10/10/2019"},{name:"abc", duration:"30 days", enddate:"10/10/2019"}]
+  }
 
   ngOnInit() {
+  }
+
+  public add()
+  {
+    let data=[{name:"abc", duration:"30 days", enddate:"10/10/2019"}];
+    this.project.push(data);
   }
 
 }

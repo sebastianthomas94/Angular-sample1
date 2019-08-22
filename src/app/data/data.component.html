@@ -1,7 +1,27 @@
-<p>
+<!-- <p>
   data works!
 </p>
+ -->
 
-
-<input type="text">
+<!-- <input type="text">
 <input type="button" value="Login">
+
+ -->
+
+<b>Projects</b>
+<table border="2">
+  <tr>
+    <td>#</td>
+    <td>Name</td>
+    <td>Duration</td>
+    <td>End date</td>
+  </tr>
+  <tr *ngFor="let h of project; let i= index">
+    <td>{{i}}</td>
+    <td>{{h.name}}</td>
+    <td>{{h.duration}}</td>
+    <td>{{h.enddate}}</td>
+  </tr>
+</table>
+
+<button type="button" name="btn1" (click)="add()">Add Data</button>

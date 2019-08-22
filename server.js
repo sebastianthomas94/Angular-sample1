@@ -16,7 +16,7 @@ const app = express();
 
 // Replace the '/dist/<to_your_project_name>'
 
-app.use(express.static(__dirname + '/dist/src'));
+app.use(express.static(__dirname + '/dist/sample1'));
 
 
 
@@ -25,7 +25,7 @@ app.get('*', function(req,res) {
 
 // Replace the '/dist/<to_your_project_name>/index.html'
 
-res.sendFile(path.join(__dirname + '/dist/src/index.html'));
+res.sendFile(path.join(__dirname + '/dist/sample1/index.html'));
 
 });
 
