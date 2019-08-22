@@ -1,0 +1,12 @@
+<p>
+  marks works!
+</p>
+
+
+ Mark out 0f 100:
+<input type="number"[(ngModel)]="mark"> 
+
+<button  >result</button>
+
+<h2 *ngIf="mark>=50">Passed</h2>
+<h2 *ngIf="mark<50">Failed</h2>
