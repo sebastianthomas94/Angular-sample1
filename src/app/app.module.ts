@@ -11,6 +11,7 @@ import { NameComponent } from './name/name.component';
 import {FormsModule} from '@angular/forms';
 import { CalcComponent } from './calc/calc.component';
 import { MarksComponent } from './marks/marks.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MarksComponent } from './marks/marks.component';
     SignupComponent,
     NameComponent,
     CalcComponent,
-    MarksComponent
+    MarksComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule, FormsModule
